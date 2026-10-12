@@ -34,17 +34,64 @@ jobs:
           key: gradle-${{ runner.os }}-${{ hashFiles('**/*.gradle*') }}
           restore-keys: gradle-${{ runner.os }}-
 
+      - name: Resolve Android SDK + sdkmanager
+        run: |
+          set -euo pipefail
+          echo "ANDROID_HOME=${ANDROID_HOME:-unset}"
+          echo "ANDROID_SDK_ROOT=${ANDROID_SDK_ROOT:-unset}"
+          java -version
+
+          SDKMANAGER=""
+          for p in "${ANDROID_HOME:-}/cmdline-tools/latest/bin/sdkmanager" \
+                   "${ANDROID_SDK_ROOT:-}/cmdline-tools/latest/bin/sdkmanager" \
+                   "/usr/local/lib/android/sdk/cmdline-tools/latest/bin/sdkmanager"; do
+            if [ -x "$p" ]; then SDKMANAGER="$p"; break; fi
+          done
+
+          if [ -z "$SDKMANAGER" ]; then
+            echo ">>> sdkmanager not found; installing cmdline-tools"
+            export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+            mkdir -p "$ANDROID_HOME/cmdline-tools"
+            cd /tmp
+            curl -fsSLo cmdtools.zip \
+              https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip
+            unzip -q -o cmdtools.zip -d /tmp/cmdtools-extract
+            rm -rf "$ANDROID_HOME/cmdline-tools/latest"
+            mv /tmp/cmdtools-extract/cmdline-tools "$ANDROID_HOME/cmdline-tools/latest"
+            SDKMANAGER="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          fi
+
+          chmod +x "$SDKMANAGER" || true
+          echo "SDKMANAGER=$SDKMANAGER"
+          echo "SDKMANAGER=$SDKMANAGER" >> "$GITHUB_ENV"
+          "$SDKMANAGER" --version
+
       - name: Accept Android SDK licences
-        run: yes | sdkmanager --licenses > /dev/null || true
+        run: |
+          set -euo pipefail
+          yes | "$SDKMANAGER" --licenses || true
 
       # Must match app/build.gradle.kts:
       #   compileSdk 36 | ndkVersion 28.2.13676358 | cmake 3.22.1
       # NDK 28 is required: NDK 26 emits 4 KiB LOAD segments that crash on
       # Android 15+ 16 KiB-page runtimes.
-      - name: Install Android SDK + NDK
+      # Installed one-by-one so a failure names the exact package.
+      - name: Install Android SDK packages
         run: |
-          sdkmanager "platform-tools" "platforms;android-36" "build-tools;35.0.0" \
-                    "ndk;28.2.13676358" "cmake;3.22.1"
+          set -euo pipefail
+          for pkg in "platform-tools" "platforms;android-36" "build-tools;35.0.0" \
+                     "ndk;28.2.13676358" "cmake;3.22.1"; do
+            echo ">>> installing $pkg"
+            if "$SDKMANAGER" "$pkg"; then
+              echo "    ok: $pkg"
+            else
+              echo "    FAILED: $pkg" >&2
+              "$SDKMANAGER" --list_installed || true
+              exit 1
+            fi
+          done
+          echo ">>> all packages installed"
+          "$SDKMANAGER" --list_installed
 
       # NOTE: `release` is intentionally NOT used. app/build.gradle.kts only sets
       # a signingConfig for release when MH_UPLOAD_* secrets exist, so a release
