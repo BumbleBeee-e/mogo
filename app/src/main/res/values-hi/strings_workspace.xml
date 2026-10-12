@@ -2,7 +2,7 @@
 <resources>
     <string name="ws_agy_setup_title">Antigravity सेट अप करें</string>
     <string name="ws_agy_connect_google">अपना Google खाता कनेक्ट करें</string>
-    <string name="ws_agy_connect_desc">PocketDev अपने निजी Linux वातावरण में Google का आधिकारिक agy CLI चलाता है। प्रमाणीकरण Google संभालता है और सहेजा गया सत्र agy के पास रहता है।</string>
+    <string name="ws_agy_connect_desc">SHANE-AI अपने निजी Linux वातावरण में Google का आधिकारिक agy CLI चलाता है। प्रमाणीकरण Google संभालता है और सहेजा गया सत्र agy के पास रहता है।</string>
     <string name="ws_agy_starting_login">आधिकारिक Antigravity लॉगिन शुरू हो रहा है…</string>
     <string name="ws_agy_completing_signin">Google साइन-इन पूरा हो रहा है…</string>
     <string name="ws_agy_signin_opened">Google साइन-इन आपके ब्राउज़र में खुल गया है। स्वीकृति के बाद दिखाया गया एक-बार का कोड कॉपी करें।</string>
@@ -11,7 +11,7 @@
     <string name="ws_agy_complete_signin">साइन-इन पूरा करें</string>
     <string name="ws_agy_connected_as">%1$s के रूप में कनेक्ट है</string>
     <string name="ws_agy_google_connected">Google खाता कनेक्ट हो गया</string>
-    <string name="ws_agy_auto_approval_warning">Antigravity के लिए स्वचालित टूल स्वीकृति सक्षम है। यह बिना पुष्टि के प्रोजेक्ट फ़ाइलें संपादित कर सकता है और कमांड चला सकता है। बदलावों की समीक्षा PocketDev में की जा सकती है।</string>
+    <string name="ws_agy_auto_approval_warning">Antigravity के लिए स्वचालित टूल स्वीकृति सक्षम है। यह बिना पुष्टि के प्रोजेक्ट फ़ाइलें संपादित कर सकता है और कमांड चला सकता है। बदलावों की समीक्षा SHANE-AI में की जा सकती है।</string>
     <string name="ws_selected">चयनित</string>
     <string name="ws_stack_included">शामिल</string>
     <string name="ws_bundles_included_offline">सभी चयनित बंडल इस ऑफ़लाइन ऐप में शामिल हैं</string>
@@ -48,7 +48,7 @@
     <string name="ws_setup_expand_details">सेटअप विवरण दिखाएं</string>
     <string name="ws_jump_to_latest">नवीनतम पर जाएं</string>
     <string name="ws_error_offline">आप ऑफ़लाइन हैं</string>
-    <string name="ws_error_start_failed">Mobile Harness शुरू होना पूरा नहीं कर सका</string>
+    <string name="ws_error_start_failed">SHANE-AI शुरू होना पूरा नहीं कर सका</string>
     <string name="ws_error_try_again_msg">कृपया फिर से कोशिश करें।</string>
     <string name="ws_setup_log_copied">सेटअप लॉग कॉपी हो गया</string>
     <string name="ws_copy_setup_logs">सेटअप लॉग कॉपी करें</string>
@@ -70,7 +70,7 @@
     <string name="ws_github_signin">GitHub से साइन इन करें</string>
     <string name="ws_github_starting">GitHub साइन-इन शुरू हो रहा है…</string>
     <string name="ws_github_enter_code">अपने ब्राउज़र में खुले GitHub पेज में यह एक-बार का कोड दर्ज करें।</string>
-    <string name="ws_github_tap_code">कोड कॉपी करने के लिए उस पर टैप करें। स्वीकृति के बाद PocketDev अपने आप कनेक्ट हो जाएगा।</string>
+    <string name="ws_github_tap_code">कोड कॉपी करने के लिए उस पर टैप करें। स्वीकृति के बाद SHANE-AI अपने आप कनेक्ट हो जाएगा।</string>
     <string name="ws_github_new_code">नया कोड बनाएं</string>
     <string name="ws_github_select_repo">एक रिपॉज़िटरी चुनें</string>
     <string name="ws_github_refresh_repos">रिपॉज़िटरी रीफ़्रेश करें</string>
@@ -79,9 +79,9 @@
     <string name="ws_repo_public">सार्वजनिक</string>
     <string name="ws_disconnect">डिस्कनेक्ट करें</string>
     <string name="ws_update_to">%1$s पर अपडेट करें</string>
-    <string name="ws_update_default_notes">Mobile Harness के नवीनतम सुधार और फ़िक्स पाएं।</string>
+    <string name="ws_update_default_notes">SHANE-AI के नवीनतम सुधार और फ़िक्स पाएं।</string>
     <string name="ws_update_download_size">डाउनलोड आकार: %1$s</string>
-    <string name="ws_update_allow_unknown_apps">Mobile Harness के लिए ‘अज्ञात ऐप्स इंस्टॉल करें’ की अनुमति दें। इस अनुमति के बिना Android अपडेट इंस्टॉल नहीं करेगा।</string>
+    <string name="ws_update_allow_unknown_apps">SHANE-AI के लिए ‘अज्ञात ऐप्स इंस्टॉल करें’ की अनुमति दें। इस अनुमति के बिना Android अपडेट इंस्टॉल नहीं करेगा।</string>
     <string name="ws_update_downloading_progress">डाउनलोड हो रहा है %1$s / %2$s · %3$d%%</string>
     <string name="ws_update_downloading">डाउनलोड हो रहा है %1$s</string>
     <string name="ws_update_verified_installing">डाउनलोड सत्यापित हुआ। Android इंस्टॉलर खुल रहा है…</string>
@@ -148,7 +148,7 @@
     <string name="ws_project_files">प्रोजेक्ट फ़ाइलें</string>
     <string name="ws_review_ai_changes">AI द्वारा किए गए सभी बदलावों की समीक्षा करें।</string>
     <string name="ws_no_changes_yet">अभी कोई बदलाव नहीं</string>
-    <string name="ws_no_changes_desc">अपना प्रोजेक्ट अपडेट करने के लिए Mobile Harness से कहें।</string>
+    <string name="ws_no_changes_desc">अपना प्रोजेक्ट अपडेट करने के लिए SHANE-AI से कहें।</string>
     <string name="ws_hide_diff">पंक्ति-दर-पंक्ति अंतर छिपाएं</string>
     <string name="ws_tap_review_diff">अंतर देखने के लिए टैप करें</string>
     <string name="ws_undo_file">फ़ाइल पूर्ववत करें</string>

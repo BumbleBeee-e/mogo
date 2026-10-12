@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">खाली स्टोरेज</string>
     <string name="an_health_storage_detail">बिल्ड और APK इंस्टॉलेशन के लिए %1$d MB उपलब्ध है।</string>
     <string name="an_health_install_title">APK इंस्टॉलेशन अनुमति</string>
-    <string name="an_health_install_ok">PocketDev APK इंस्टॉलेशन का अनुरोध कर सकता है।</string>
-    <string name="an_health_install_missing">PocketDev को अज्ञात ऐप्स इंस्टॉल करने की अनुमति दें।</string>
+    <string name="an_health_install_ok">SHANE-AI APK इंस्टॉलेशन का अनुरोध कर सकता है।</string>
+    <string name="an_health_install_missing">SHANE-AI को अज्ञात ऐप्स इंस्टॉल करने की अनुमति दें।</string>
     <string name="an_health_apk_title">डीबग APK</string>
     <string name="an_health_apk_missing">अभी तक कोई डीबग APK बिल्ड नहीं हुआ है।</string>
     <string name="an_health_apk_stale">नवीनतम APK प्रोजेक्ट सोर्स से पुराना है।</string>

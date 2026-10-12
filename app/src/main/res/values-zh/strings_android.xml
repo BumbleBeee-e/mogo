@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">可用存储空间</string>
     <string name="an_health_storage_detail">可用于构建和安装 APK 的空间：%1$d MB。</string>
     <string name="an_health_install_title">APK 安装权限</string>
-    <string name="an_health_install_ok">PocketDev 可以请求安装 APK。</string>
-    <string name="an_health_install_missing">请允许 PocketDev 安装未知应用。</string>
+    <string name="an_health_install_ok">SHANE-AI 可以请求安装 APK。</string>
+    <string name="an_health_install_missing">请允许 SHANE-AI 安装未知应用。</string>
     <string name="an_health_apk_title">调试 APK</string>
     <string name="an_health_apk_missing">尚未构建调试 APK。</string>
     <string name="an_health_apk_stale">最新 APK 早于项目源代码。</string>

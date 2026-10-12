@@ -155,7 +155,7 @@ object AndroidProjectTemplateGenerator {
             @Composable
             private fun Welcome() {
                 Column(Modifier.fillMaxSize(), Arrangement.Center, Alignment.CenterHorizontally) {
-                    Text("Built with PocketDev")
+                    Text("Built with SHANE-AI")
                 }
             }
         """)
@@ -199,7 +199,7 @@ object AndroidProjectTemplateGenerator {
         """)
         write(root, "app/src/main/res/layout/activity_main.xml", """
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:gravity="center" android:orientation="vertical">
-                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Built with PocketDev" android:textSize="22sp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Built with SHANE-AI" android:textSize="22sp" />
             </LinearLayout>
         """)
         write(root, "app/src/main/java/$packagePath/MainActivity.kt", """

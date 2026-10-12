@@ -27,8 +27,13 @@ val hasUploadSigning = listOf(
 ).all { !it.isNullOrBlank() }
 val runtimeReleaseBaseUrl =
     "https://github.com/techjarves/Mobile-Harness/releases/download/runtime-2026.09.4"
+// SHANE-AI: in-app updates are disabled by default. Leaving this pointed at the
+// upstream Mobile Harness manifest would let a stock Mobile Harness APK install
+// over this build and silently undo the rebrand (same applicationId). Override
+// with -PappUpdateManifestUrl=https://... only once you publish your own signed
+// releases.
 val appUpdateManifestUrl =
-    "https://github.com/techjarves/Mobile-Harness/releases/latest/download/mobile-harness-update.json"
+    providers.gradleProperty("appUpdateManifestUrl").orNull ?: ""
 val runtimeBundleDir = rootProject.layout.projectDirectory.dir("dist/runtime-bundles")
 val generatedRuntimeAssets = layout.buildDirectory.dir("generated/runtime-assets")
 

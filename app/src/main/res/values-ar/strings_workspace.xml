@@ -2,7 +2,7 @@
 <resources>
     <string name="ws_agy_setup_title">إعداد Antigravity</string>
     <string name="ws_agy_connect_google">اربط حسابك على Google</string>
-    <string name="ws_agy_connect_desc">يشغّل PocketDev أداة agy CLI الرسمية من Google داخل بيئة Linux الخاصة به. تتولى Google المصادقة وتحتفظ agy بالجلسة المحفوظة.</string>
+    <string name="ws_agy_connect_desc">يشغّل SHANE-AI أداة agy CLI الرسمية من Google داخل بيئة Linux الخاصة به. تتولى Google المصادقة وتحتفظ agy بالجلسة المحفوظة.</string>
     <string name="ws_agy_starting_login">جارٍ بدء تسجيل الدخول الرسمي إلى Antigravity…</string>
     <string name="ws_agy_completing_signin">جارٍ إكمال تسجيل الدخول عبر Google…</string>
     <string name="ws_agy_signin_opened">فُتح تسجيل الدخول عبر Google في متصفحك. انسخ الرمز لمرة واحدة الذي يظهر بعد الموافقة.</string>
@@ -11,7 +11,7 @@
     <string name="ws_agy_complete_signin">إكمال تسجيل الدخول</string>
     <string name="ws_agy_connected_as">متصل باسم %1$s</string>
     <string name="ws_agy_google_connected">تم ربط حساب Google</string>
-    <string name="ws_agy_auto_approval_warning">الموافقة التلقائية على الأدوات مفعّلة لـ Antigravity. يمكنه تعديل ملفات المشروع وتشغيل الأوامر دون تأكيد. تظل التغييرات قابلة للمراجعة في PocketDev.</string>
+    <string name="ws_agy_auto_approval_warning">الموافقة التلقائية على الأدوات مفعّلة لـ Antigravity. يمكنه تعديل ملفات المشروع وتشغيل الأوامر دون تأكيد. تظل التغييرات قابلة للمراجعة في SHANE-AI.</string>
     <string name="ws_selected">محدد</string>
     <string name="ws_stack_included">مُضمَّن</string>
     <string name="ws_bundles_included_offline">جميع الحزم المحددة مضمّنة في هذا التطبيق غير المتصل</string>
@@ -48,7 +48,7 @@
     <string name="ws_setup_expand_details">توسيع تفاصيل الإعداد</string>
     <string name="ws_jump_to_latest">الانتقال إلى الأحدث</string>
     <string name="ws_error_offline">أنت غير متصل بالإنترنت</string>
-    <string name="ws_error_start_failed">تعذّر على Mobile Harness إكمال التشغيل</string>
+    <string name="ws_error_start_failed">تعذّر على SHANE-AI إكمال التشغيل</string>
     <string name="ws_error_try_again_msg">يرجى المحاولة مرة أخرى.</string>
     <string name="ws_setup_log_copied">تم نسخ سجل الإعداد</string>
     <string name="ws_copy_setup_logs">نسخ سجلات الإعداد</string>
@@ -70,7 +70,7 @@
     <string name="ws_github_signin">تسجيل الدخول باستخدام GitHub</string>
     <string name="ws_github_starting">جارٍ بدء تسجيل الدخول إلى GitHub…</string>
     <string name="ws_github_enter_code">أدخل هذا الرمز لمرة واحدة في صفحة GitHub المفتوحة في متصفحك.</string>
-    <string name="ws_github_tap_code">انقر على الرمز لنسخه. سيتصل PocketDev تلقائيًا بعد الموافقة.</string>
+    <string name="ws_github_tap_code">انقر على الرمز لنسخه. سيتصل SHANE-AI تلقائيًا بعد الموافقة.</string>
     <string name="ws_github_new_code">إنشاء رمز جديد</string>
     <string name="ws_github_select_repo">اختر مستودعًا</string>
     <string name="ws_github_refresh_repos">تحديث المستودعات</string>
@@ -79,9 +79,9 @@
     <string name="ws_repo_public">عام</string>
     <string name="ws_disconnect">قطع الاتصال</string>
     <string name="ws_update_to">التحديث إلى %1$s</string>
-    <string name="ws_update_default_notes">احصل على أحدث التحسينات والإصلاحات لـ Mobile Harness.</string>
+    <string name="ws_update_default_notes">احصل على أحدث التحسينات والإصلاحات لـ SHANE-AI.</string>
     <string name="ws_update_download_size">حجم التنزيل: %1$s</string>
-    <string name="ws_update_allow_unknown_apps">اسمح بـ ‘تثبيت التطبيقات غير المعروفة’ لـ Mobile Harness. بدون هذا الإذن لن يثبّت Android التحديث.</string>
+    <string name="ws_update_allow_unknown_apps">اسمح بـ ‘تثبيت التطبيقات غير المعروفة’ لـ SHANE-AI. بدون هذا الإذن لن يثبّت Android التحديث.</string>
     <string name="ws_update_downloading_progress">جارٍ التنزيل %1$s / %2$s · %3$d%%</string>
     <string name="ws_update_downloading">جارٍ التنزيل %1$s</string>
     <string name="ws_update_verified_installing">تم التحقق من التنزيل. جارٍ فتح مثبّت Android…</string>
@@ -148,7 +148,7 @@
     <string name="ws_project_files">ملفات المشروع</string>
     <string name="ws_review_ai_changes">راجع كل ما غيّره الذكاء الاصطناعي.</string>
     <string name="ws_no_changes_yet">لا توجد تغييرات بعد</string>
-    <string name="ws_no_changes_desc">اطلب من Mobile Harness تحديث مشروعك.</string>
+    <string name="ws_no_changes_desc">اطلب من SHANE-AI تحديث مشروعك.</string>
     <string name="ws_hide_diff">إخفاء الفروقات سطرًا بسطر</string>
     <string name="ws_tap_review_diff">انقر لمراجعة الفروقات</string>
     <string name="ws_undo_file">التراجع عن الملف</string>

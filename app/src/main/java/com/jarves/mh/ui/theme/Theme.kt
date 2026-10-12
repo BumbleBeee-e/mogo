@@ -11,50 +11,61 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalView
 import androidx.core.view.WindowCompat
 
-val PocketOrange = Color(0xFFF28C52)
-val PocketBlue = Color(0xFF8EA8FF)
-val PocketGreen = Color(0xFF69D69E)
-val PocketBackground = Color(0xFF0B0E14)
-val PocketSurface = Color(0xFF131821)
-val PocketSurfaceVariant = Color(0xFF1B222D)
-val PocketOutline = Color(0xFF2A3240)
+// ---------------------------------------------------------------------------
+// SHANE-AI brand palette — navy blue
+// Replaces the original orange-accent scheme. Keep the `Pocket*` symbol names so
+// the ~200 existing call sites across the UI keep compiling unchanged.
+// ---------------------------------------------------------------------------
+
+// Brand blue, used for primary actions and the active selection state.
+val PocketOrange = Color(0xFF3B82F6)
+val PocketBlue = Color(0xFF60A5FA)
+val PocketGreen = Color(0xFF38BDF8)
+
+// Deep navy surfaces, darkest to lightest.
+val PocketBackground = Color(0xFF0A1220)
+val PocketSurface = Color(0xFF111C2E)
+val PocketSurfaceVariant = Color(0xFF17253A)
+val PocketOutline = Color(0xFF24354C)
 
 private val DarkColors = darkColorScheme(
     primary = PocketOrange,
-    onPrimary = Color(0xFF241107),
-    primaryContainer = Color(0xFF42281D),
-    onPrimaryContainer = Color(0xFFFFDDCC),
+    onPrimary = Color(0xFFFFFFFF),
+    primaryContainer = Color(0xFF1E3A5F),
+    onPrimaryContainer = Color(0xFFD3E3FD),
     secondary = PocketBlue,
-    onSecondary = Color(0xFF001F58),
+    onSecondary = Color(0xFF06152E),
     tertiary = PocketGreen,
-    onTertiary = Color(0xFF00391E),
+    onTertiary = Color(0xFF04202E),
     background = PocketBackground,
-    onBackground = Color(0xFFE6EDF3),
+    onBackground = Color(0xFFE2E8F0),
     surface = PocketSurface,
-    onSurface = Color(0xFFE6EDF3),
+    onSurface = Color(0xFFE2E8F0),
     surfaceVariant = PocketSurfaceVariant,
-    onSurfaceVariant = Color(0xFF9AA0A6),
+    onSurfaceVariant = Color(0xFF94A3B8),
     outline = PocketOutline,
-    outlineVariant = Color(0xFF333B4A),
+    outlineVariant = Color(0xFF33455E),
+    error = Color(0xFFEF6B6B),
+    onError = Color(0xFF2B0A0A),
 )
 
 private val LightColors = lightColorScheme(
-    primary = Color(0xFFD85A20),
+    primary = Color(0xFF1D4ED8),
     onPrimary = Color(0xFFFFFFFF),
-    primaryContainer = Color(0xFFFFE0D2),
-    onPrimaryContainer = Color(0xFF451A08),
-    secondary = Color(0xFF3366CC),
+    primaryContainer = Color(0xFFDCE7FE),
+    onPrimaryContainer = Color(0xFF0B1F4D),
+    secondary = Color(0xFF2563EB),
     onSecondary = Color(0xFFFFFFFF),
-    tertiary = Color(0xFF1B8A5A),
+    tertiary = Color(0xFF0369A1),
     onTertiary = Color(0xFFFFFFFF),
-    background = Color(0xFFF6F8FA),
-    onBackground = Color(0xFF1F2328),
+    background = Color(0xFFF5F7FB),
+    onBackground = Color(0xFF0F172A),
     surface = Color(0xFFFFFFFF),
-    onSurface = Color(0xFF1F2328),
-    surfaceVariant = Color(0xFFEAEFF5),
-    onSurfaceVariant = Color(0xFF57606A),
-    outline = Color(0xFFD0D7DE),
-    outlineVariant = Color(0xFFD8DEE4),
+    onSurface = Color(0xFF0F172A),
+    surfaceVariant = Color(0xFFE6EDF7),
+    onSurfaceVariant = Color(0xFF52627A),
+    outline = Color(0xFFC7D2E4),
+    outlineVariant = Color(0xFFDCE4F0),
 )
 
 enum class AppThemeMode { SYSTEM, DARK, LIGHT }

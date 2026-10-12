@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">Free storage</string>
     <string name="an_health_storage_detail">%1$d MB available for builds and APK installation.</string>
     <string name="an_health_install_title">APK installation permission</string>
-    <string name="an_health_install_ok">PocketDev can request APK installation.</string>
-    <string name="an_health_install_missing">Allow PocketDev to install unknown apps.</string>
+    <string name="an_health_install_ok">SHANE-AI can request APK installation.</string>
+    <string name="an_health_install_missing">Allow SHANE-AI to install unknown apps.</string>
     <string name="an_health_apk_title">Debug APK</string>
     <string name="an_health_apk_missing">No debug APK has been built yet.</string>
     <string name="an_health_apk_stale">The latest APK is older than the project source.</string>

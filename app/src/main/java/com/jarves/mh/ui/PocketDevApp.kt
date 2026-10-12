@@ -599,7 +599,7 @@ private fun InitialLanguageSetupScreen(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         BrandMark(compact = true)
                         Spacer(Modifier.width(9.dp))
-                        Text("Mobile Harness", fontWeight = FontWeight.Bold)
+                        Text("SHANE-AI", fontWeight = FontWeight.Bold)
                     }
                 },
                 actions = {
@@ -891,7 +891,7 @@ private fun BackgroundTaskSetupScreen(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         BrandMark(compact = true)
                         Spacer(Modifier.width(9.dp))
-                        Text("Mobile Harness", fontWeight = FontWeight.Bold)
+                        Text("SHANE-AI", fontWeight = FontWeight.Bold)
                     }
                 },
                 actions = {
@@ -1167,7 +1167,7 @@ private fun RuntimeSetupPromptScreen(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         BrandMark(compact = true)
                         Spacer(Modifier.width(9.dp))
-                        Text("Mobile Harness", fontWeight = FontWeight.Bold)
+                        Text("SHANE-AI", fontWeight = FontWeight.Bold)
                     }
                 },
                 navigationIcon = {
@@ -1862,7 +1862,7 @@ private fun localizeRuntimeMessage(message: String): String {
         trimmed.equals("Setup complete", ignoreCase = true) -> {
             stringResource(R.string.runtime_msg_setup_complete)
         }
-        trimmed.contains("Resuming Mobile Harness setup", ignoreCase = true) -> {
+        trimmed.contains("Resuming SHANE-AI setup", ignoreCase = true) -> {
             stringResource(R.string.runtime_msg_resuming_setup)
         }
         trimmed.startsWith("Downloading ") && !trimmed.startsWith("Downloading: ") -> {
@@ -2367,7 +2367,7 @@ private fun StartupErrorScreen(
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         BrandMark(compact = true)
                         Spacer(Modifier.width(9.dp))
-                        Text("Mobile Harness", fontWeight = FontWeight.Bold)
+                        Text("SHANE-AI", fontWeight = FontWeight.Bold)
                     }
                 },
                 actions = {
@@ -3567,7 +3567,7 @@ private fun ProjectsScreen(
         topBar = {
             TopAppBar(
                 modifier = Modifier.padding(top = 8.dp),
-                title = { Row(verticalAlignment = Alignment.CenterVertically) { BrandMark(compact = true); Spacer(Modifier.width(9.dp)); Text("Mobile Harness", fontWeight = FontWeight.Bold) } },
+                title = { Row(verticalAlignment = Alignment.CenterVertically) { BrandMark(compact = true); Spacer(Modifier.width(9.dp)); Text("SHANE-AI", fontWeight = FontWeight.Bold) } },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = MaterialTheme.colorScheme.background),
             )
         },
@@ -4584,7 +4584,7 @@ private fun WorkspaceScreen(
             text = {
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Text(stringResource(R.string.ws_destructive_desc))
-                    Surface(color = Color(0xFF14171E), shape = RoundedCornerShape(8.dp)) {
+                    Surface(color = Color(0xFF17253A), shape = RoundedCornerShape(8.dp)) {
                         Text(
                             command,
                             Modifier.fillMaxWidth().padding(10.dp),
@@ -5126,7 +5126,7 @@ private fun AndroidDashboardScreen(
                                         Icon(Icons.Default.ContentCopy, null); Spacer(Modifier.width(4.dp)); Text(stringResource(R.string.copy_log))
                                     }
                                 }
-                                if (showRawLog) Surface(color = Color(0xFF11141A), shape = RoundedCornerShape(12.dp)) {
+                                if (showRawLog) Surface(color = Color(0xFF111C2E), shape = RoundedCornerShape(12.dp)) {
                                     SelectionContainer {
                                         Text(
                                             state.androidBuildLog,
@@ -5401,7 +5401,7 @@ private fun ProfessionalAndroidOverview(
 
         if (showRawLog) {
             item {
-                Surface(color = Color(0xFF11141A), shape = RoundedCornerShape(16.dp)) {
+                Surface(color = Color(0xFF111C2E), shape = RoundedCornerShape(16.dp)) {
                     SelectionContainer {
                         Text(
                             state.androidBuildLog.ifBlank { stringResource(R.string.android_no_build_output) },
@@ -5550,7 +5550,7 @@ private fun FileViewerScreen(
 
     // Code palette follows the app theme (light or dark) instead of a fixed dark scheme.
     val darkTheme = MaterialTheme.colorScheme.background.luminance() < 0.5f
-    val codeBackground = if (darkTheme) Color(0xFF0D1117) else MaterialTheme.colorScheme.surface
+    val codeBackground = if (darkTheme) Color(0xFF0A1220) else MaterialTheme.colorScheme.surface
     val codeText = if (darkTheme) Color(0xFFE2E8F0) else MaterialTheme.colorScheme.onSurface
     val gutterText = if (darkTheme) Color(0xFF6E7681) else MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f)
     val toolbarBackground = if (darkTheme) Color(0xFF161B22) else MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.5f)
@@ -7111,7 +7111,7 @@ private fun ChangesTab(
                     if (expanded) {
                         HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
                         Column(
-                            Modifier.fillMaxWidth().background(Color(0xFF0B0E14)).horizontalScroll(rememberScrollState()),
+                            Modifier.fillMaxWidth().background(Color(0xFF0A1220)).horizontalScroll(rememberScrollState()),
                         ) {
                             change.diffLines.forEach { line -> DiffLineRow(line) }
                         }
@@ -7370,7 +7370,7 @@ private fun BrandMark(modifier: Modifier = Modifier, compact: Boolean = false) {
     ) {
         Icon(
             imageVector = Icons.Default.Terminal,
-            contentDescription = "Mobile Harness",
+            contentDescription = "SHANE-AI",
             modifier = Modifier.size(iconSize),
             tint = primary,
         )

@@ -475,7 +475,7 @@ class RuntimeInstaller(private val context: Context) {
         onProgress: suspend (RuntimeInstallProgress) -> Unit,
     ) {
         check(isSupportedDshVersion(expectedVersion)) {
-            "DeepSeek Harness $expectedVersion is not compatible with this PocketDev build"
+            "DeepSeek Harness $expectedVersion is not compatible with this SHANE-AI build"
         }
         val quotedVersion = expectedVersion.replace(Regex("[^0-9A-Za-z.+-]"), "")
         check(quotedVersion == expectedVersion) { "Invalid DeepSeek Harness version" }
@@ -652,7 +652,7 @@ class RuntimeInstaller(private val context: Context) {
 
     private fun applyDshAndroidCompatibility(dshRoot: File, version: String) {
         check(isSupportedDshVersion(version)) {
-            "DeepSeek Harness $version is not compatible with this PocketDev build"
+            "DeepSeek Harness $version is not compatible with this SHANE-AI build"
         }
         val persistence = File(
             dshRoot,
@@ -689,7 +689,7 @@ class RuntimeInstaller(private val context: Context) {
         var source = file.readText()
         if (callAfter in source && importAfter in source) return
         check(callBefore in source && importBefore in source) {
-            "Installed DeepSeek Harness source is not compatible with this PocketDev build"
+            "Installed DeepSeek Harness source is not compatible with this SHANE-AI build"
         }
         source = source.replace(importBefore, importAfter).replace(callBefore, callAfter)
         file.writeText(source)

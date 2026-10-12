@@ -2,7 +2,7 @@
 <resources>
     <string name="ws_agy_setup_title">Configurar Antigravity</string>
     <string name="ws_agy_connect_google">Conecta tu cuenta de Google</string>
-    <string name="ws_agy_connect_desc">PocketDev ejecuta la CLI oficial agy de Google dentro de su entorno Linux privado. Google gestiona la autenticación y agy guarda la sesión.</string>
+    <string name="ws_agy_connect_desc">SHANE-AI ejecuta la CLI oficial agy de Google dentro de su entorno Linux privado. Google gestiona la autenticación y agy guarda la sesión.</string>
     <string name="ws_agy_starting_login">Iniciando el inicio de sesión oficial de Antigravity…</string>
     <string name="ws_agy_completing_signin">Completando el inicio de sesión con Google…</string>
     <string name="ws_agy_signin_opened">El inicio de sesión de Google se abrió en tu navegador. Copia el código de un solo uso que aparece tras la aprobación.</string>
@@ -11,7 +11,7 @@
     <string name="ws_agy_complete_signin">Completar inicio de sesión</string>
     <string name="ws_agy_connected_as">Conectado como %1$s</string>
     <string name="ws_agy_google_connected">Cuenta de Google conectada</string>
-    <string name="ws_agy_auto_approval_warning">La aprobación automática de herramientas está activada para Antigravity. Puede editar archivos del proyecto y ejecutar comandos sin confirmación. Los cambios se pueden revisar en PocketDev.</string>
+    <string name="ws_agy_auto_approval_warning">La aprobación automática de herramientas está activada para Antigravity. Puede editar archivos del proyecto y ejecutar comandos sin confirmación. Los cambios se pueden revisar en SHANE-AI.</string>
     <string name="ws_selected">Seleccionado</string>
     <string name="ws_stack_included">incluido</string>
     <string name="ws_bundles_included_offline">Todos los paquetes seleccionados están incluidos en esta app sin conexión</string>
@@ -48,7 +48,7 @@
     <string name="ws_setup_expand_details">Expandir detalles de configuración</string>
     <string name="ws_jump_to_latest">Ir a lo más reciente</string>
     <string name="ws_error_offline">Estás sin conexión</string>
-    <string name="ws_error_start_failed">Mobile Harness no pudo terminar de iniciarse</string>
+    <string name="ws_error_start_failed">SHANE-AI no pudo terminar de iniciarse</string>
     <string name="ws_error_try_again_msg">Inténtalo de nuevo.</string>
     <string name="ws_setup_log_copied">Registro de configuración copiado</string>
     <string name="ws_copy_setup_logs">Copiar registros de configuración</string>
@@ -70,7 +70,7 @@
     <string name="ws_github_signin">Iniciar sesión con GitHub</string>
     <string name="ws_github_starting">Iniciando sesión con GitHub…</string>
     <string name="ws_github_enter_code">Introduce este código de un solo uso en la página de GitHub abierta en tu navegador.</string>
-    <string name="ws_github_tap_code">Toca el código para copiarlo. PocketDev se conectará automáticamente tras la aprobación.</string>
+    <string name="ws_github_tap_code">Toca el código para copiarlo. SHANE-AI se conectará automáticamente tras la aprobación.</string>
     <string name="ws_github_new_code">Generar nuevo código</string>
     <string name="ws_github_select_repo">Selecciona un repositorio</string>
     <string name="ws_github_refresh_repos">Actualizar repositorios</string>
@@ -79,9 +79,9 @@
     <string name="ws_repo_public">Público</string>
     <string name="ws_disconnect">Desconectar</string>
     <string name="ws_update_to">Actualizar a %1$s</string>
-    <string name="ws_update_default_notes">Obtén las últimas mejoras y correcciones de Mobile Harness.</string>
+    <string name="ws_update_default_notes">Obtén las últimas mejoras y correcciones de SHANE-AI.</string>
     <string name="ws_update_download_size">Tamaño de descarga: %1$s</string>
-    <string name="ws_update_allow_unknown_apps">Permite «Instalar apps desconocidas» para Mobile Harness. Sin este permiso, Android no instalará la actualización.</string>
+    <string name="ws_update_allow_unknown_apps">Permite «Instalar apps desconocidas» para SHANE-AI. Sin este permiso, Android no instalará la actualización.</string>
     <string name="ws_update_downloading_progress">Descargando %1$s / %2$s · %3$d%%</string>
     <string name="ws_update_downloading">Descargando %1$s</string>
     <string name="ws_update_verified_installing">Descarga verificada. Abriendo el instalador de Android…</string>
@@ -148,7 +148,7 @@
     <string name="ws_project_files">Archivos del proyecto</string>
     <string name="ws_review_ai_changes">Revisa todo lo que cambió la IA.</string>
     <string name="ws_no_changes_yet">Aún no hay cambios</string>
-    <string name="ws_no_changes_desc">Pide a Mobile Harness que actualice tu proyecto.</string>
+    <string name="ws_no_changes_desc">Pide a SHANE-AI que actualice tu proyecto.</string>
     <string name="ws_hide_diff">Ocultar diferencias línea por línea</string>
     <string name="ws_tap_review_diff">Toca para revisar las diferencias</string>
     <string name="ws_undo_file">Deshacer archivo</string>

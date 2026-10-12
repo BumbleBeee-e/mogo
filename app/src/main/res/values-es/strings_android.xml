@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">Almacenamiento libre</string>
     <string name="an_health_storage_detail">%1$d MB disponibles para compilaciones e instalación de APK.</string>
     <string name="an_health_install_title">Permiso de instalación de APK</string>
-    <string name="an_health_install_ok">PocketDev puede solicitar la instalación de APK.</string>
-    <string name="an_health_install_missing">Permite que PocketDev instale apps desconocidas.</string>
+    <string name="an_health_install_ok">SHANE-AI puede solicitar la instalación de APK.</string>
+    <string name="an_health_install_missing">Permite que SHANE-AI instale apps desconocidas.</string>
     <string name="an_health_apk_title">APK de depuración</string>
     <string name="an_health_apk_missing">Todavía no se ha compilado ningún APK de depuración.</string>
     <string name="an_health_apk_stale">El APK más reciente es anterior al código fuente del proyecto.</string>

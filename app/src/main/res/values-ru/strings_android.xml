@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">Свободное место</string>
     <string name="an_health_storage_detail">Доступно %1$d МБ для сборок и установки APK.</string>
     <string name="an_health_install_title">Разрешение на установку APK</string>
-    <string name="an_health_install_ok">PocketDev может запрашивать установку APK.</string>
-    <string name="an_health_install_missing">Разрешите PocketDev устанавливать неизвестные приложения.</string>
+    <string name="an_health_install_ok">SHANE-AI может запрашивать установку APK.</string>
+    <string name="an_health_install_missing">Разрешите SHANE-AI устанавливать неизвестные приложения.</string>
     <string name="an_health_apk_title">Отладочный APK</string>
     <string name="an_health_apk_missing">Отладочный APK ещё не собран.</string>
     <string name="an_health_apk_stale">Последний APK старше исходного кода проекта.</string>

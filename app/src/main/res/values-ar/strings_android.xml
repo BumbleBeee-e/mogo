@@ -77,8 +77,8 @@
     <string name="an_health_storage_title">المساحة الحرة</string>
     <string name="an_health_storage_detail">%1$d ميغابايت متاحة للبناء وتثبيت APK.</string>
     <string name="an_health_install_title">إذن تثبيت APK</string>
-    <string name="an_health_install_ok">يمكن لـ PocketDev طلب تثبيت APK.</string>
-    <string name="an_health_install_missing">اسمح لـ PocketDev بتثبيت التطبيقات غير المعروفة.</string>
+    <string name="an_health_install_ok">يمكن لـ SHANE-AI طلب تثبيت APK.</string>
+    <string name="an_health_install_missing">اسمح لـ SHANE-AI بتثبيت التطبيقات غير المعروفة.</string>
     <string name="an_health_apk_title">APK التصحيح</string>
     <string name="an_health_apk_missing">لم يتم بناء APK للتصحيح بعد.</string>
     <string name="an_health_apk_stale">أحدث ملف APK أقدم من مصدر المشروع.</string>

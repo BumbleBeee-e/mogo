@@ -189,7 +189,7 @@ private fun CodeSnippetBlock(block: MarkdownBlock.CodeBlock, onRunCode: ((String
 
     Surface(
         shape = RoundedCornerShape(12.dp),
-        color = Color(0xFF14171E),
+        color = Color(0xFF17253A),
         modifier = Modifier
             .fillMaxWidth()
             .border(1.dp, Color(0xFF2A2E39), RoundedCornerShape(12.dp)),
