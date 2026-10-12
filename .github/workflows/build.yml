@@ -13,6 +13,12 @@ jobs:
     name: Build arm64 APK
     runs-on: ubuntu-latest
 
+    # Required for the release step to create tags and upload the APK asset.
+    # Without this the job's default GITHUB_TOKEN is read-only and the release
+    # step fails with "Resource not accessible by integration".
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout (with submodules)
         uses: actions/checkout@v4
