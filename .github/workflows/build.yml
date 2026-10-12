@@ -69,3 +69,31 @@ jobs:
           path: ${{ steps.apk.outputs.path }}
           if-no-files-found: error
           retention-days: 30
+
+      # Publish the APK as a GitHub Release rather than committing it to git.
+      # The APK is ~85-100 MB, right at GitHub's 100 MB hard file limit, and a
+      # binary in history is kept forever by every future commit. A Release lets
+      # anyone download it from the repo page without bloating the clone.
+      # Only the default branch publishes; feature branches stop at the artifact.
+      - name: Publish APK as a GitHub Release
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: softprops/action-gh-release@v2
+        with:
+          name: SHANE-AI ${{ github.run_number }}
+          tag_name: v${{ github.run_number }}
+          draft: false
+          prerelease: false
+          files: ${{ steps.apk.outputs.path }}
+          body: |
+            **SHANE-AI** - AI mobile coding environment for Android.
+
+            Download the .apk below, transfer it to your phone, and open it.
+            Enable *Install unknown apps* when prompted.
+
+            Built from commit ${{ github.sha }}.
+
+            Signed with the stock Gradle debug keystore, so it is for personal
+            sideloading only. Uninstall any previous build first - Android
+            rejects signature mismatches.
+
+            Requires ARM64, Android 9.0+, ~2.5 GB free storage.
