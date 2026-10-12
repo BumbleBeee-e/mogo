@@ -3733,7 +3733,7 @@ private fun ProjectsScreen(
                             }
                             Spacer(Modifier.width(12.dp))
                             Column(Modifier.weight(1f)) {
-                                Text("Mobile Harness ${update.versionName}", fontWeight = FontWeight.Bold)
+                                Text("SHANE-AI ${update.versionName}", fontWeight = FontWeight.Bold)
                                 Text(stringResource(R.string.ws_update_ready), fontSize = 12.sp, color = MaterialTheme.colorScheme.onSurfaceVariant)
                             }
                             Text(stringResource(R.string.ws_update), color = PocketOrange, fontWeight = FontWeight.Bold, fontSize = 13.sp)
